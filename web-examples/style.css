@@ -61,6 +61,16 @@ button{
 }
 
 /*// POP-UP ANIMATION STYLES //*/
+#pop-up {
+    top: -400px;
+    animation: drop 2s ease forwards
+}
+
+@keyframes drop {
+    0%{opacity: 0}
+    70%{transform: translateY(400px); opacity: 0.7}
+    100%{transform: translateY(400px); opacity: 1}
+}
 
 
 /*// BASKET BASE STYLES //*/
@@ -100,6 +110,19 @@ header:after{
 }
 
 /*// BASKET ANIMATION STYLES //*/
+.zoom {
+    position: absolute;
+    top: 40px;
+    left: 320px;
+    width: 40px;
+    opacity: 0;
+    animation: zoom 2s ease forwards;
+}
+@keyframes zoom {
+    0%{opacity: 0}
+    50%{opacity: 1;}
+    100%{opacity: 0; left: 2000px}
+}
 
 
 
